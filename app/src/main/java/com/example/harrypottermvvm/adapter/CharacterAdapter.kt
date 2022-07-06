@@ -51,7 +51,8 @@ class CharacterAdapter : RecyclerView.Adapter<CharacterAdapter.CharacterViewHold
         val currentCharacter = character[position]
 
         holder.binding.apply {
-            textView.text = currentCharacter.name
+            textViewCharacterName.text = currentCharacter.name
+            textViewHouseName.text = currentCharacter.house
             imageView.load(currentCharacter.image) {
                 crossfade(true)
                 crossfade(1000)

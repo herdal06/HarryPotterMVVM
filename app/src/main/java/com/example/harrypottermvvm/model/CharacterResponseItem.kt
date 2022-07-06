@@ -9,5 +9,6 @@ data class CharacterResponseItem(
     val image: String?,
     @SerializedName("name")
     val name: String?,
-
+    @SerializedName("house")
+    val house: String?,
 )
