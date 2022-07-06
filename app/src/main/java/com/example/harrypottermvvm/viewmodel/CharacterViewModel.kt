@@ -20,6 +20,7 @@ class CharacterViewModel @Inject constructor(private val repository: CharacterRe
 
     init {
         getCharacter()
+        getGryffindorCharacters()
     }
 
     private fun getCharacter() = viewModelScope.launch {
@@ -31,5 +32,13 @@ class CharacterViewModel @Inject constructor(private val repository: CharacterRe
             }
         }
     }
-
+    private fun getGryffindorCharacters() = viewModelScope.launch {
+        repository.getGryffindorCharacters().let { response ->
+            if (response.isSuccessful) {
+                _response.postValue(response.body())
+            } else {
+                Log.d("Response Error", "getGryffindorCharacters: ${response.code()}")
+            }
+        }
+    }
 }
