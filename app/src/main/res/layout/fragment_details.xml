@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
-    tools:context=".fragments.DetailsFragment">
+    tools:context=".ui.details.DetailsFragment">
 
 
     <ImageView

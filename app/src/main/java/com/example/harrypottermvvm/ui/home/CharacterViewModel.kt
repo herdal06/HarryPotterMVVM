@@ -1,4 +1,4 @@
-package com.example.harrypottermvvm.viewmodel
+package com.example.harrypottermvvm.ui.home
 
 import android.util.Log
 import androidx.lifecycle.LiveData

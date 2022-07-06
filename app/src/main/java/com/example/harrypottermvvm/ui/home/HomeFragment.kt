@@ -1,4 +1,4 @@
-package com.example.harrypottermvvm.fragments
+package com.example.harrypottermvvm.ui.home
 
 import android.os.Bundle
 import android.view.View
@@ -9,7 +9,6 @@ import com.example.harrypottermvvm.R
 import com.example.harrypottermvvm.adapter.CharacterAdapter
 import com.example.harrypottermvvm.databinding.FragmentHomeBinding
 import com.example.harrypottermvvm.utils.viewBinding
-import com.example.harrypottermvvm.viewmodel.CharacterViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

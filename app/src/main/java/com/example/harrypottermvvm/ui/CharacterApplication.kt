@@ -1,4 +1,4 @@
-package com.example.harrypottermvvm
+package com.example.harrypottermvvm.ui
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

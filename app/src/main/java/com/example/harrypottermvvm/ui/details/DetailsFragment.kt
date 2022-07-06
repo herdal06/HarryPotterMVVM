@@ -1,4 +1,4 @@
-package com.example.harrypottermvvm.fragments
+package com.example.harrypottermvvm.ui.details
 
 import android.os.Bundle
 import android.view.View

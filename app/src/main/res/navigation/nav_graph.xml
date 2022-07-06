@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.harrypottermvvm.fragments.HomeFragment"
+        android:name="com.example.harrypottermvvm.ui.home.HomeFragment"
         android:label="All Characters"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.example.harrypottermvvm.fragments.DetailsFragment"
+        android:name="com.example.harrypottermvvm.ui.details.DetailsFragment"
         android:label="Character Details"
         tools:layout="@layout/fragment_details" >
         <action
