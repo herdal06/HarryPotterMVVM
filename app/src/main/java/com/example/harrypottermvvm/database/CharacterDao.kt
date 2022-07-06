@@ -6,9 +6,9 @@ import com.example.harrypottermvvm.model.CharacterResponseItem
 
 @Dao
 interface CharacterDao {
-    @Query("SELECT * FROM CharacterResponseItem")
+    @Query("SELECT * FROM character")
     fun getAll(): List<CharacterResponseItem>
 
-    @Query("SELECT * FROM CharacterResponseItem WHERE house IN  (:characterHouses)")
+    @Query("SELECT * FROM character WHERE house IN  (:characterHouses)")
     fun getAllByHouses(characterHouses: ArrayList<String>): List<CharacterResponseItem>
 }

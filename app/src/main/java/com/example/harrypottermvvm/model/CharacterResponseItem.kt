@@ -7,10 +7,10 @@ import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
-@Entity
+@Entity(tableName = "character")
 @Parcelize
 data class CharacterResponseItem(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     val uid: Int,
     @ColumnInfo(name = "actor")
     @SerializedName("actor")
