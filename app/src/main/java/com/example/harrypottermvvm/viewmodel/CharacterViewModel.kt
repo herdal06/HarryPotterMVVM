@@ -14,8 +14,8 @@ import javax.inject.Inject
 @HiltViewModel
 class CharacterViewModel @Inject constructor(private val repository: CharacterRepository) :
     ViewModel() {
-    private val _response = MutableLiveData<CharacterResponseItem>()
-    val characterResponse: LiveData<CharacterResponseItem>
+    private val _response = MutableLiveData<List<CharacterResponseItem>>()
+    val characterResponse: LiveData<List<CharacterResponseItem>>
         get() = _response
 
     init {
