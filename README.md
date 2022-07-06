@@ -20,7 +20,6 @@ Libraries Used
   
 * Third party and miscellaneous libraries
   * [Retrofit][90] for turns your HTTP API into a Java interface
-  * [OkHttp][91] OkHttp is an HTTP client that’s efficient by default
   * [Coil][92] for image loading
   * [Dagger-Hilt][93] Hilt is the recommended solution for [dependency injection][21] in Android apps, and works seamlessly with Compose.
 
@@ -39,7 +38,5 @@ Libraries Used
 [30]: https://developer.android.com/guide/topics/ui
 [34]: https://developer.android.com/guide/components/fragments
 [35]: https://developer.android.com/guide/topics/ui/declaring-layout
-[94]: https://github.com/bumptech/glide
-[91]: https://square.github.io/okhttp/
 [21]: https://developer.android.com/training/dependency-injection
 [22]: https://developer.android.com/guide/components/activities/activity-lifecycle
