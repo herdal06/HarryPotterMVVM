@@ -1,33 +1,25 @@
 package com.example.harrypottermvvm.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.example.harrypottermvvm.R
 import com.example.harrypottermvvm.databinding.FragmentDetailsBinding
 import com.example.harrypottermvvm.model.CharacterResponseItem
 import com.example.harrypottermvvm.utils.loadImage
+import com.example.harrypottermvvm.utils.viewBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class DetailsFragment : Fragment(R.layout.fragment_details) {
 
-    private var _binding: FragmentDetailsBinding? = null
-    private val binding get() = _binding!!
+    private val binding by viewBinding(FragmentDetailsBinding::bind)
+
+
     private val args: DetailsFragmentArgs by navArgs()
     private lateinit var character: CharacterResponseItem
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        _binding = FragmentDetailsBinding.inflate(inflater, container, false)
-        val view = binding.root
-
-        return view
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -37,7 +29,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         populateUI()
     }
 
-    private fun populateUI() {
+    private fun populateUI() = with(binding) {
         binding.apply {
             (getString(R.string.character_name) + character.name).also {
                 textViewNameDetails.text = it
@@ -62,10 +54,5 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
             }
             imageViewDetails.loadImage(character.image)
         }
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }
