@@ -25,6 +25,9 @@
         <action
             android:id="@+id/action_detailsFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <argument
+            android:name="character"
+            app:argType="com.example.harrypottermvvm.model.CharacterResponseItem" />
     </fragment>
     <fragment
         android:id="@+id/webViewFragment"
@@ -34,5 +37,8 @@
         <action
             android:id="@+id/action_webViewFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
+        <argument
+            android:name="characterWebView"
+            app:argType="com.example.harrypottermvvm.model.CharacterResponseItem" />
     </fragment>
 </navigation>
