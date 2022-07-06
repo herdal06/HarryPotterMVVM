@@ -53,11 +53,6 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                 crossfade(true)
                 crossfade(1000)
             }
-            buttonGoToReference.setOnClickListener { mView ->
-                val direction =
-                    DetailsFragmentDirections.actionDetailsFragmentToWebViewFragment(character)
-                mView.findNavController().navigate(direction)
-            }
         }
     }
 

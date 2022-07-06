@@ -98,12 +98,4 @@
         android:textSize="20sp" />
 
 
-    <Button
-        android:id="@+id/buttonGoToReference"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Character Reference" />
-
-
 </LinearLayout>
