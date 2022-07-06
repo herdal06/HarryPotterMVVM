@@ -2,11 +2,13 @@ package com.example.harrypottermvvm.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.example.harrypottermvvm.databinding.ItemCharacterRowBinding
+import com.example.harrypottermvvm.fragments.HomeFragmentDirections
 import com.example.harrypottermvvm.model.CharacterResponseItem
 
 class CharacterAdapter : RecyclerView.Adapter<CharacterAdapter.CharacterViewHolder>() {
@@ -57,6 +59,12 @@ class CharacterAdapter : RecyclerView.Adapter<CharacterAdapter.CharacterViewHold
                 crossfade(true)
                 crossfade(1000)
             }
+        }
+
+        holder.itemView.setOnClickListener { mView ->
+            val direction =
+                HomeFragmentDirections.actionHomeFragmentToDetailsFragment(currentCharacter)
+            mView.findNavController().navigate(direction)
         }
     }
 

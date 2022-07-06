@@ -35,7 +35,7 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textViewActorDetails"
+        android:id="@+id/textViewActor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -44,7 +44,7 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textViewGenderDetails"
+        android:id="@+id/textViewGender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -53,7 +53,7 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textViewYearOfBirthDetails"
+        android:id="@+id/textViewYearOfBirth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

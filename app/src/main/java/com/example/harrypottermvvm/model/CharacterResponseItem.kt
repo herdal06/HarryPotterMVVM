@@ -18,9 +18,9 @@ data class CharacterResponseItem(
     val gender: String?,
     @SerializedName("yearOfBirth")
     val yearOfBirth: String?,
-    @SerializedName("hairColor")
+    @SerializedName("hairColour")
     val hairColor: String?,
-    @SerializedName("eyeColor")
+    @SerializedName("eyeColour")
     val eyeColor: String?,
     @SerializedName("wizard")
     val wizard: Boolean?,
