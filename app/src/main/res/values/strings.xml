@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">HarryPotterMVVM</string>
+    <string name="character_name">Character Name : </string>
+    <string name="house_name">House Name : </string>
+    <string name="actor_name">Actor Name : </string>
+    <string name="gender">Gender : </string>
+    <string name="yearOfBirth">Year of birth : </string>
+    <string name="hairColor">Hair color : </string>
+    <string name="eyeColor">Eye color : </string>
+    <string name="isWizard">Is he/she a wizard? : </string>
+    <string name="isAlive">Is he/she alive? : </string>
 </resources>

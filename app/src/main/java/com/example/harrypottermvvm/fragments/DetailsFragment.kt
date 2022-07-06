@@ -40,15 +40,15 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
 
     private fun populateUI() {
         binding.apply {
-            textViewNameDetails.text = character.name
-            textViewHouseDetails.text = character.house
-            textViewActor.text = character.actor
-            textViewGender.text = character.gender
-            textViewYearOfBirth.text = character.yearOfBirth
-            textViewHairColor.text = character.hairColor
-            textViewEyeColor.text = character.eyeColor
-            textViewIsWizard.text = character.wizard.toString()
-            textViewIsAlive.text = character.alive.toString()
+            textViewNameDetails.text = "Character name : " + character.name
+            textViewHouseDetails.text = "House : " + character.house
+            textViewActor.text = "Actor's name : " + character.actor
+            textViewGender.text = "Gender : " + character.gender
+            textViewYearOfBirth.text = "Year of birth : " + character.yearOfBirth
+            textViewHairColor.text = "Hair color : " + character.hairColor
+            textViewEyeColor.text = "Eye color : " + character.eyeColor
+            textViewIsWizard.text = "Is he/she a wizard ? : " + character.wizard.toString()
+            textViewIsAlive.text = "Is he/she alive? : " + character.alive.toString()
             imageViewDetails.load(character.image) {
                 crossfade(true)
                 crossfade(1000)
